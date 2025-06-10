@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+  
+nav {
+    background-color: #003366;
+    padding: 0;
+  }
+  
+  .navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #003366;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #0059b3;
+  }
+  
+  /* Submenú */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #004080;
+    min-width: 180px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #0066cc;
+  }
+  
+  /* Mostrar submenú al pasar el mouse */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Elemento activo */
+  .selected {
+    background-color: #0066cc;
+  }
+  
+  .navbar .active > .dropbtn {
+    background-color: #0066cc;
+  }
+  
+  /* Contenedor general */
+  .container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  main.contenido {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  
+  button:hover {
+    background-color: #038e5a;
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  .boton {
+    background-color: #1f77b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .boton:hover {
+    background-color: #155a8a;
+  }
+  
+  .links-metodos {
+    display: flex;
+    gap: 20px;
+  }
+  
+
+/* Contenedor de cada tabla */
+
+.tabla-metodo h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Estilo para tablas */
+
+
+.tabla-metodo th, .tabla-metodo td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tabla-metodo th {
+  background-color: #f2f2f2;
+}
+
+/* Estilo para gráficos */
+.grafica-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Contenedor para inputs de configuración */
+.configuracion {
+  margin-bottom: 30px;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.configuracion label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.configuracion input {
+  padding: 5px;
+  margin-right: 20px;
+  width: 80px;
+}
+
+/* Botones */
+button {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Sección de resultados finales */
+#comparacionFinal {
+  margin-top: 40px;
+}
+
+#comparacionFinal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#comparacionFinal th, #comparacionFinal td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#comparacionFinal th {
+  background-color: #e2e2e2;
+}
+
+#comparacionFinal h4 {
+  margin-top: 30px;
+  text-align: center;
+}
+.tablas-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .tabla-metodo {
+    width: 48%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  canvas {
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  #tablaHeun {
+    max-width: 50%;
+  }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Método de Heun</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Inicio</a></li>
+      <li class="dropdown active">
+        <a href="#" class="dropbtn">Ejercicio Tumor</a>
+        <div class="dropdown-content">
+          <a href="ejercicioTumor39.html" class="selected">Ejercicio Tumor</a>
+          <a href="ejercicio40.html">Ejercicio 2</a>
+          <a href="ejercicio37.html">Ejercicio 3</a>
+        </div>
+      </li>
+      <li><a href="heun.html">Heun</a></li>
+      <li><a href="rk4.html">RK4</a></li>
+      <li><a href="comparacion.html">Comparación</a></li>
+      <li><a href="experimentar.html">Experimentar</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenido">
+    <h1>Resolvamos el ejercicio por el método de Heun</h1>
+    <p>En esta ocasión usaremos paso <strong>h = 1 </strong></p>
+
+    <button id="resolverHeun">Resolver</button>
+    <div id="tablaHeun" style="display: none;"></div>
+
+    <button id="generarGraficaHeun" style="display: none;">Generar gráfica</button>
+    <canvas id="graficaHeun" width="800" height="400" style="display: none;"></canvas>
+  </main>
+
+  <script src="js/heun.js"></script>
+</body>
+</html>

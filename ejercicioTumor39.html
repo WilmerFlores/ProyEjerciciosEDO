@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelado del Crecimiento Tumoral</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Inicio</a></li>
+      <li class="dropdown active">
+        <a href="#" class="dropbtn">Ejercicio Tumor</a>
+        <div class="dropdown-content">
+          <a href="ejercicioTumor39.html" class="selected">Ejercicio Tumor</a>
+          <a href="ejercicio40.html">Ejercicio 2</a>
+          <a href="#">Ejercicio 3</a>
+        </div>
+      </li>
+      <li><a href="heun.html">Heun</a></li>
+      <li><a href="rk4.html">RK4</a></li>
+      <li><a href="comparacion.html">Comparación</a></li>
+      <li><a href="experimentar.html">Experimentar</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenido">
+    <h1>Modelado del Crecimiento Tumoral</h1>
+    <p>En esta ocasión resolveremos el siguiente problema:</p>
+    <p>
+      El crecimiento de un tumor puede modelarse con la siguiente ecuación diferencial ordinaria:<br><br>
+      \[ \frac{dA}{dt} = \alpha A \left(1 - \left(\frac{A}{k}\right)^\nu \right) \]<br><br>
+      donde \( A(t) \) representa el área del tumor y \( \alpha, k, \nu \) son constantes.
+    </p>
+    <p>
+      Resolver la ecuación para el intervalo \( 0 \leq t \leq 30 \) días, con los siguientes valores:
+      \[ \alpha = 0.8, \quad k = 60, \quad \nu = 0.25, \quad A(0) = 1\ \text{mm}^2 \]
+      Realiza una gráfica del área \( A \) como función del tiempo.
+    </p>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

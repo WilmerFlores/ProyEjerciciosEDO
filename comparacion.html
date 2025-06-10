@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparación de Métodos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <nav>
+    <ul class="navbar">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown active">
+          <a href="#" class="dropbtn">Ejercicio Tumor</a>
+          <div class="dropdown-content">
+            <a href="ejercicioTumor39.html" class="selected">Ejercicio Tumor</a>
+            <a href="ejercicio40.html">Ejercicio 2</a>
+            <a href="ejercicio37.html">Ejercicio 3</a>
+          </div>
+        </li>
+        <li><a href="heun.html">Heun</a></li>
+        <li><a href="rk4.html">RK4</a></li>
+        <li><a href="comparacion.html">Comparación</a></li>
+        <li><a href="experimentar.html">Experimentar</a></li>
+      </ul>
+    </nav>
+
+  <main class="contenido">
+    <h2>¿Ya revisaste los resultados por ambos métodos?</h2>
+    <p>Si no los revisaste, haz clic en alguno de los siguientes enlaces:</p>
+    <a class="boton" href="heun.html">Resolver por Heun</a>
+    <a class="boton" href="rk4.html">Resolver por Runge-Kutta 4to Orden</a>
+
+    <h2>Si ya los revisaste, veamos las comparaciones de ambos métodos</h2>
+    <button class="boton" id="generarComparacion">Generar Tabla de Comparación</button>
+
+    <div id="tablaComparacion" style="display:none;"></div>
+
+    <div id="conclusion" style="display:none; margin-top:20px;">
+      <h3>Conclusión</h3>
+      <p>
+        Aunque ambos métodos son precisos, el método de Runge-Kutta de cuarto orden ofrece mayor precisión en menos iteraciones, lo que lo hace preferible para problemas donde se busca una mejor aproximación numérica sin aumentar mucho el número de pasos. Sin embargo, Heun es más sencillo de implementar.
+      </p>
+    </div>
+  </main>
+
+  <script src="js/comparacion.js"></script>
+</body>
+</html>
+

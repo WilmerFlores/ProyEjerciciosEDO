@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caída libre con resistencia cuadrática</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Inicio</a></li>
+      <li class="dropdown active">
+        <a href="#" class="dropbtn">Ejercicio Física</a>
+        <div class="dropdown-content">
+          <a href="ejercicioTumor39.html">Ejercicio Tumor</a>
+          <a href="ejercicio40.html" class="selected">Ejercicio Caída Libre</a>
+          <a href="ejercicio37.html">Ejercicio 3</a>
+        </div>
+      </li>
+      <li><a href="heun2.html">Heun</a></li>
+      <li><a href="rk42.html">RK4</a></li>
+      <li><a href="comparacion2.html">Comparación</a></li>
+      <li><a href="experimentar2.html">Experimentar</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenido">
+    <h1>Modelado de la Caída Libre con Resistencia del Aire</h1>
+    <p>En esta ocasión resolveremos el siguiente problema:</p>
+    <p>
+      La velocidad de un objeto que cae libremente debido a la gravedad terrestre puede modelarse con la siguiente ecuación diferencial:
+    </p>
+    <p>
+      \[
+      m \frac{dv}{dt} = -mg + kv^2
+      \]
+      donde \( m \) es la masa del objeto, \( g = 9.81\ \text{m/s}^2 \) y \( k \) es una constante.
+    </p>
+    <p>
+      Resolver la ecuación para el caso \( m = 5\ \text{kg},\ k = 0.05\ \text{kg/m},\ 0 \leq t \leq 15\ \text{s} \) y \( v(0) = 0\ \text{m/s} \).
+      Realiza una gráfica de la velocidad \( v \) como función del tiempo.
+    </p>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
